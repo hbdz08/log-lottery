@@ -73,6 +73,7 @@ export function useViewModel() {
     const isInitialDone = ref<boolean>(false)
     const animationFrameId = ref<any>(null)
     const playingAudios = ref<HTMLAudioElement[]>([])
+    const drawPrizeName = ref<string>('')
 
     // 抽奖音乐相关
     const lotteryMusic = ref<HTMLAudioElement | null>(null)
@@ -449,6 +450,7 @@ export function useViewModel() {
         if (!canOperate.value) {
             return
         }
+        drawPrizeName.value = ''
 
         // 重置音频状态
         resetAudioState()
@@ -527,6 +529,7 @@ export function useViewModel() {
         luckyCount.value = leftover < luckyCount.value ? leftover : luckyCount.value
         // 重构抽奖函数
         luckyTargets.value = getRandomElements(personPool.value, luckyCount.value)
+        drawPrizeName.value = currentPrize.value.name
         luckyTargets.value.forEach((item) => {
             const index = personPool.value.findIndex(person => person.id === item.id)
             if (index > -1) {
@@ -562,6 +565,7 @@ export function useViewModel() {
         if (!canOperate.value) {
             return
         }
+        drawPrizeName.value = currentPrize.value.name
         // 停止抽奖音乐
         stopLotteryMusic()
 
@@ -679,6 +683,7 @@ export function useViewModel() {
         if (!canOperate.value) {
             return
         }
+        drawPrizeName.value = ''
         const customCount = currentPrize.value.separateCount
         if (customCount && customCount.enable && customCount.countList.length > 0) {
             for (let i = 0; i < customCount.countList.length; i++) {
@@ -705,6 +710,7 @@ export function useViewModel() {
         // 停止抽奖音乐
         stopLotteryMusic()
 
+        drawPrizeName.value = ''
         enterLottery()
         currentStatus.value = LotteryStatus.init
     }
@@ -908,5 +914,6 @@ export function useViewModel() {
         isInitialDone,
         titleFont,
         titleFontSyncGlobal,
+        drawPrizeName,
     }
 }

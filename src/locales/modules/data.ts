@@ -15,6 +15,7 @@ export const dataEn = {
     defaultTitle: 'The Prelude to the Six Ministries of the Ming Dynasty Cabinet',
     xlsxName: 'personListTemplate-en.xlsx',
     readmeName: 'readme-en.md',
+    currentPrize: 'Prize',
 }
 
 export const dataZhCn = {
@@ -31,9 +32,10 @@ export const dataZhCn = {
     operation: '操作',
     delete: '删除',
     removePerson: '移入未中奖名单',
-    defaultTitle: '大明内阁六部御前奏对',
+    defaultTitle: '2026年会大抽奖',
     xlsxName: '人口登记表-zhCn.xlsx',
     readmeName: 'readme-zhCn.md',
+    currentPrize: '中奖奖品',
 }
 
 export const data = {
