@@ -20,19 +20,16 @@ RUN pnpm build
 FROM nginx:1.26
 
 # 复制自定义 nginx 配置
-COPY --from=0 /usr/src/app/dist /usr/share/nginx/html/log-lottery
+COPY --from=0 /usr/src/app/dist /usr/share/nginx/html
 
 # 创建自定义 nginx 配置
 RUN echo "server {\
     listen 80;\
     server_name localhost;\
+    root /usr/share/nginx/html;\
+    index index.html index.htm;\
     location / {\
-        return 301 /log-lottery/;\
-    }\
-    location /log-lottery {\
-        alias /usr/share/nginx/html/log-lottery;\
-        index index.html index.htm;\
-        try_files \$uri \$uri/ /log-lottery/index.html;\
+        try_files \$uri \$uri/ /index.html;\
     }\
 }" > /etc/nginx/conf.d/default.conf
 

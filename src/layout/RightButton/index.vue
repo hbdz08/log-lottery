@@ -29,15 +29,15 @@ const qrCodeImg = useQRCode(mobileUrl)
 const visible = ref(true)
 
 function enterConfig() {
-    router.push('/log-lottery/config')
+    router.push('/config')
 }
 function enterHome() {
-    router.push('/log-lottery')
+    router.push('/')
 }
 async function openMobileQrCode() {
     const originUrl = getOriginUrl()
     const userSignature = await getUniqueSignature()
-    mobileUrl.value = `${originUrl}/log-lottery/mobile?userSignature=${userSignature}`
+    mobileUrl.value = `${originUrl}/mobile?userSignature=${userSignature}`
     customDialogRef.value.showDialog()
 }
 function handleSubmit() {

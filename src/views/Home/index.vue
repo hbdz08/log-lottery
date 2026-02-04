@@ -47,10 +47,10 @@ const { getCurrentPrize: currentPrize } = storeToRefs(prizeConfig)
     class="absolute left-1/2 -translate-x-1/2 z-[90] bottom-[120px] md:bottom-[140px] w-[calc(100vw-2rem)] max-w-2xl"
   >
     <div class="p-6 border shadow-xl card bg-base-100/90 backdrop-blur border-base-300">
-      <div class="text-sm opacity-70">
+      <div class="text-sm opacity-70 text-center">
         {{ t('data.currentPrize') }}
       </div>
-      <div class="mt-2 text-5xl font-extrabold tracking-wide text-primary">
+      <div class="mt-2 text-5xl font-extrabold tracking-wide text-primary text-center">
         {{ drawPrizeName }}
       </div>
       <div v-if="currentPrize?.picture?.url" class="flex justify-center mt-6">

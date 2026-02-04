@@ -17,15 +17,19 @@ export const useGlobalConfig = defineStore('global', {
                 theme: {
                     name: 'dracula',
                     detail: { primary: '#0f5fd3' },
-                    cardColor: '#ff79c6',
+                    cardColor: '#CB153A',
                     cardWidth: 140,
                     cardHeight: 200,
                     textColor: '#00000000',
-                    luckyCardColor: '#ECB1AC',
+                    luckyCardColor: '#FFB74E',
                     textSize: 30,
-                    patternColor: '#1b66c9',
+                    patternColor: '#FFC261',
                     patternList: defaultPatternList as number[],
-                    background: {}, // 背景颜色或图片
+                    background: {
+                        "id": "4",
+                        "name": "背景图",
+                        "url": "https://image.manmanyouhudong.com/image/bg2.png"
+                    }, // 背景颜色或图片
                     font: '微软雅黑',
                     titleFont: '微软雅黑',
                     titleFontSyncGlobal: true,
@@ -288,7 +292,7 @@ export const useGlobalConfig = defineStore('global', {
         reset() {
             this.globalConfig = {
                 rowCount: 17,
-                winMusic: false,
+                winMusic: true,
                 isSHowPrizeList: true,
                 isShowAvatar: false,
                 topTitle: i18n.global.t('data.defaultTitle'),
@@ -297,15 +301,19 @@ export const useGlobalConfig = defineStore('global', {
                 theme: {
                     name: 'dracula',
                     detail: { primary: '#0f5fd3' },
-                    cardColor: '#ff79c6',
+                    cardColor: '#CB153A',
                     cardWidth: 140,
                     cardHeight: 200,
                     textColor: '#00000000',
-                    luckyCardColor: '#ECB1AC',
+                    luckyCardColor: '#FFB74E',
                     textSize: 30,
-                    patternColor: '#1b66c9',
+                    patternColor: '#FFC261',
                     patternList: defaultPatternList as number[],
-                    background: {}, // 背景颜色或图片
+                    background: {
+                        "id": "4",
+                        "name": "背景图",
+                        "url": "https://image.manmanyouhudong.com/image/bg1.jpg"
+                    }, // 背景颜色或图片
                     font: '微软雅黑',
                     titleFont: '微软雅黑',
                     titleFontSyncGlobal: true,

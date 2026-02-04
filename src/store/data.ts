@@ -136,9 +136,9 @@ export const defaultPrizeList = <IPrizeConfig[]>[
         count: 4,
         isUsedCount: 0,
         picture: {
-            id: '2',
-            name: '三等奖',
-            url: `${originUrl}/resource/image/image3.png`,
+            id: '3',
+            name: '幸运奖',
+            url: `https://image.manmanyouhudong.com/image/img3.jpg`,
         },
         separateCount: {
             enable: true,
@@ -166,9 +166,9 @@ export const defaultPrizeList = <IPrizeConfig[]>[
         count: 3,
         isUsedCount: 0,
         picture: {
-            id: '1',
+            id: '2',
             name: '三等奖',
-            url: `${originUrl}/resource/image/image3.png`,
+            url: `https://image.manmanyouhudong.com/image/img4.jpg`,
         },
         separateCount: {
             enable: false,
@@ -187,9 +187,9 @@ export const defaultPrizeList = <IPrizeConfig[]>[
         count: 2,
         isUsedCount: 0,
         picture: {
-            id: '0',
+            id: '1',
             name: '二等奖',
-            url: `${originUrl}/resource/image/image2.png`,
+            url: `https://image.manmanyouhudong.com/image/img1.jpg`,
         },
         separateCount: {
             enable: false,
@@ -208,9 +208,9 @@ export const defaultPrizeList = <IPrizeConfig[]>[
         count: 1,
         isUsedCount: 0,
         picture: {
-            id: '3',
+            id: '0',
             name: '一等奖',
-            url: `${originUrl}/resource/image/image1.png`,
+            url: `https://image.manmanyouhudong.com/image/img2.jpg`,
         },
         separateCount: {
             enable: false,
@@ -269,27 +269,27 @@ export const defaultImageList = [
     {
         id: '0',
         name: '一等奖',
-        url: `${originUrl}/resource/image/image1.png`,
+        url: `https://image.manmanyouhudong.com/image/img2.jpg`,
     },
     {
         id: '1',
         name: '二等奖',
-        url: `${originUrl}/resource/image/image2.png`,
+        url: `https://image.manmanyouhudong.com/image/img1.jpg`,
     },
     {
         id: '2',
         name: '三等奖',
-        url: `${originUrl}/resource/image/image3.png`,
+        url: `https://image.manmanyouhudong.com/image/img4.jpg`,
     },
     {
         id: '3',
-        name: '超级奖',
-        url: `${originUrl}/resource/image/image4.png`,
+        name: '幸运奖',
+        url: `https://image.manmanyouhudong.com/image/img3.jpg`,
     },
     {
         id: '4',
-        name: '特别奖',
-        url: `${originUrl}/resource/image/image5.png`,
+        name: '背景图',
+        url: `https://image.manmanyouhudong.com/image/bg2.png`,
     },
 ]
 export const defaultPatternList = [21, 38, 55, 54, 53, 70, 87, 88, 89, 23, 40, 57, 74, 91, 92, 76, 59, 42, 25, 24, 27, 28, 29, 46, 63, 62, 61, 78, 95, 96, 97, 20, 19, 31, 48, 66, 67, 84, 101, 100, 32, 33, 93, 65, 82, 99]

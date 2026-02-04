@@ -26,6 +26,7 @@ const titleStyle = computed(() => {
     const style: CSSProperties = {
         fontSize: `${textSize.value * 1.5}px`,
     }
+    style.transform = [style.transform, 'skewX(-5deg)'].filter(Boolean).join(' ')
     if (!titleFontSyncGlobal.value) {
         style.fontFamily = titleFont.value
     }
@@ -40,13 +41,13 @@ const { t } = useI18n()
 
 <template>
   <div class="absolute z-10 flex flex-col items-center justify-center -translate-x-1/2 left-1/2">
-    <h2
+    <h1
       class="pt-12 m-0 mb-12 tracking-wide text-center leading-12"
-      :class="{ 'animate-pulse bg-linear-to-r from-primary via-secondary to-accent bg-clip-text text-transparent': !isTextColor }"
+      :class="{ 'animate-pulse bg-linear-to-b from-[#ffe19c] to-[#ff7b36] bg-clip-text text-transparent': !isTextColor }"
       :style="titleStyle"
     >
       {{ topTitle }}
-    </h2>
+    </h1>
     <div v-if="isInitialDone" class="flex gap-3">
       <button
         v-if="tableData.length <= 0" class="cursor-pointer btn btn-outline btn-secondary btn-lg"
