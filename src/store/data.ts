@@ -65,7 +65,8 @@ export const defaultPersonList = <IPersonConfigWithoutUuid[]>
     { "uid": "U100156059", "name": "李金", "department": "港服一部", "identity": "运营", "avatar": "https://robohash.org/lijin-gangfu1?set=set1", "x": 1, "y": 1, "id": 58, "isWin": false, "createTime": "Tue Jan 09 2024 23:20:07 GMT+0800 (China Standard Time)", "updateTime": "Tue Jan 09 2024 23:20:07 GMT+0800 (China Standard Time)", "prizeName": [], "prizeTime": [], "prizeId": [] },
     { "uid": "U100156060", "name": "漆依亮", "department": "港服一部", "identity": "运营", "avatar": "https://api.dicebear.com/6.x/avataaars/svg?seed=qiyiliang-gangfu1", "x": 1, "y": 1, "id": 59, "isWin": false, "createTime": "Tue Jan 09 2024 23:20:07 GMT+0800 (China Standard Time)", "updateTime": "Tue Jan 09 2024 23:20:07 GMT+0800 (China Standard Time)", "prizeName": [], "prizeTime": [], "prizeId": [] },
     { "uid": "U100156061", "name": "陈坤", "department": "港服二部", "identity": "运营", "avatar": "https://robohash.org/chenkun-gangfu2?set=set2", "x": 1, "y": 1, "id": 60, "isWin": false, "createTime": "Tue Jan 09 2024 23:20:07 GMT+0800 (China Standard Time)", "updateTime": "Tue Jan 09 2024 23:20:07 GMT+0800 (China Standard Time)", "prizeName": [], "prizeTime": [], "prizeId": [] },
-    { "uid": "U100156062", "name": "欧代鸿", "department": "港服一部", "identity": "运营", "avatar": "https://api.dicebear.com/6.x/bottts/svg?seed=oudaihong-gangfu1", "x": 1, "y": 1, "id": 61, "isWin": false, "createTime": "Tue Jan 09 2024 23:20:07 GMT+0800 (China Standard Time)", "updateTime": "Tue Jan 09 2024 23:20:07 GMT+0800 (China Standard Time)", "prizeName": [], "prizeTime": [], "prizeId": [] }
+    { "uid": "U100156062", "name": "欧代鸿", "department": "港服一部", "identity": "运营", "avatar": "https://api.dicebear.com/6.x/bottts/svg?seed=oudaihong-gangfu1", "x": 1, "y": 1, "id": 61, "isWin": false, "createTime": "Tue Jan 09 2024 23:20:07 GMT+0800 (China Standard Time)", "updateTime": "Tue Jan 09 2024 23:20:07 GMT+0800 (China Standard Time)", "prizeName": [], "prizeTime": [], "prizeId": [] },
+    { "uid": "U100156062", "name": "李志斌", "department": "综合部", "identity": "总经理", "avatar": "https://api.dicebear.com/6.x/bottts/svg?seed=lizhibing", "x": 1, "y": 1, "id": 62, "isWin": false, "createTime": "Tue Jan 09 2024 23:20:07 GMT+0800 (China Standard Time)", "updateTime": "Tue Jan 09 2024 23:20:07 GMT+0800 (China Standard Time)", "prizeName": [], "prizeTime": [], "prizeId": [] }
 ]
 
 export const defaultMusicList = [
@@ -130,14 +131,44 @@ export const defaultMusicList = [
 export const defaultPrizeList = <IPrizeConfig[]>[
     {
         id: '001',
-        name: '幸运奖（小米手环）',
+        name: '幸运奖（充电宝）',
         sort: 1,
         isAll: false,
-        count: 4,
+        count: 11,
         isUsedCount: 0,
         picture: {
             id: '3',
             name: '幸运奖',
+            url: `https://image.manmanyouhudong.com/image/img6.png`,
+        },
+        separateCount: {
+            enable: true,
+            countList: [ {
+                "id": "1",
+                "count": 6,
+                "isUsedCount": 0
+            },
+            {
+                "id": "2",
+                "count": 5,
+                "isUsedCount": 0
+            }],
+        },
+        desc: '幸运奖（充电宝）',
+        isShow: true,
+        isUsed: false,
+        frequency: 1,
+    },
+    {
+        id: '002',
+        name: '四等奖（小米手环）',
+        sort: 2,
+        isAll: false,
+        count: 4,
+        isUsedCount: 0,
+        picture: {
+            id: '5',
+            name: '四等奖',
             url: `https://image.manmanyouhudong.com/image/img3.jpg`,
         },
         separateCount: {
@@ -153,15 +184,15 @@ export const defaultPrizeList = <IPrizeConfig[]>[
                 "isUsedCount": 0
             }],
         },
-        desc: '幸运奖（小米手环）',
+        desc: '四等奖（小米手环）',
         isShow: true,
         isUsed: false,
         frequency: 1,
     },
     {
-        id: '002',
+        id: '003',
         name: '三等奖（徕芬吹风机礼盒）',
-        sort: 2,
+        sort: 3,
         isAll: false,
         count: 3,
         isUsedCount: 0,
@@ -180,9 +211,9 @@ export const defaultPrizeList = <IPrizeConfig[]>[
         frequency: 1,
     },
     {
-        id: '003',
+        id: '004',
         name: '二等奖（苹果蓝牙耳机）',
-        sort: 3,
+        sort: 4,
         isAll: false,
         count: 2,
         isUsedCount: 0,
@@ -201,9 +232,9 @@ export const defaultPrizeList = <IPrizeConfig[]>[
         frequency: 1,
     },
     {
-        id: '004',
+        id: '005',
         name: '一等奖（苹果手机17）',
-        sort: 4,
+        sort: 5,
         isAll: false,
         count: 1,
         isUsedCount: 0,
@@ -284,12 +315,17 @@ export const defaultImageList = [
     {
         id: '3',
         name: '幸运奖',
-        url: `https://image.manmanyouhudong.com/image/img3.jpg`,
+        url: `https://image.manmanyouhudong.com/image/img6.png`,
     },
     {
         id: '4',
         name: '背景图',
         url: `https://image.manmanyouhudong.com/image/bg2.png`,
+    },
+    {
+        id: '5',
+        name: '四等奖',
+        url: `https://image.manmanyouhudong.com/image/img3.jpg`,
     },
 ]
 export const defaultPatternList = [21, 38, 55, 54, 53, 70, 87, 88, 89, 23, 40, 57, 74, 91, 92, 76, 59, 42, 25, 24, 27, 28, 29, 46, 63, 62, 61, 78, 95, 96, 97, 20, 19, 31, 48, 66, 67, 84, 101, 100, 32, 33, 93, 65, 82, 99]
