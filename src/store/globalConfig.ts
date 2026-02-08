@@ -28,7 +28,7 @@ export const useGlobalConfig = defineStore('global', {
                     background: {
                         "id": "4",
                         "name": "背景图",
-                        "url": "https://image.manmanyouhudong.com/image/bg2.png"
+                        "url": "https://image.xixingwangluokeji.cn/image/bg2.png"
                     }, // 背景颜色或图片
                     font: '微软雅黑',
                     titleFont: '微软雅黑',
@@ -312,7 +312,7 @@ export const useGlobalConfig = defineStore('global', {
                     background: {
                         "id": "4",
                         "name": "背景图",
-                        "url": "https://image.manmanyouhudong.com/image/bg2.png"
+                        "url": "https://image.xixingwangluokeji.cn/image/bg2.png"
                     }, // 背景颜色或图片
                     font: '微软雅黑',
                     titleFont: '微软雅黑',

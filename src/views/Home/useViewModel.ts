@@ -98,7 +98,6 @@ export function useViewModel() {
         renderer.value.domElement.style.top = '50%'
         renderer.value.domElement.style.left = '50%'
         renderer.value.domElement.style.transform = 'translate(-50%, -50%)'
-        renderer.value.domElement.style.zIndex = '2'
         WebGLoutput!.appendChild(renderer.value.domElement)
 
         controls.value = new TrackballControls(camera.value, renderer.value.domElement)
